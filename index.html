@@ -3,10 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alkometri</title>
+    <title>Alcometer</title>
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
+        <h3>Alcometer</h3>
+        <div>
+            <form>
+                <div>
+                    <label>Weight</label>
+                    <input id="weight" type="Number"/>
+                </div>
+                <div>
+                    <label for="time">Time</label>
+                    <select id="time" name="time">
+                        <option value="1">1 hour</option>
+                        <option value="2">2 hours</option>
+                        <option value="3">3 hours</option>
+                        <option value="4">4 hours</option>
+                        <option value="5">5 hours</option>
+                        <option value="6">6 hours</option>
+                        <option value="7">7 hours</option>
+                        <option value="8">8 hours</option>
+                        <option value="9">9 hours</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bottles">Bottles</label>
+                    <select id="bottles" name="bottles">
+                        <option value="1">1 bottle</option>
+                        <option value="2">2 bottles</option>
+                        <option value="3">3 bottles</option>
+                        <option value="4">4 bottles</option>
+                        <option value="5">5 bottles</option>
+                        <option value="6">6 bottles</option>
+                        <option value="7">7 bottles</option>
+                        <option value="8">8 bottles</option>
+                        <option value="9">9 bottles</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label>Promilles</label>
+                    <output></output>
+                </div>
+                <div>
+                    <button type="button">Calculate</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="./js/functions.js"></script>
 </body>
 </html>
